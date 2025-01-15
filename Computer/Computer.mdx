@@ -1,0 +1,96 @@
+---
+title: Computer Holiday Homework | 2025 Winters
+author: Harihar Nautiyal
+publishTime: 2025-01-15
+modifyTime: 2025-01-15
+date: 2025-01-15
+tags: ['computer', 'holdiay homework']
+description: vault for homework 2025
+bannerURL: https://indiadidac.org/wp-content/uploads/2019/12/homework.jpg
+---
+
+# Computer Holiday Homework
+Computer holiday homework consist of 15 python programs
+
+here are links to programs 
+
+## Triangle Area Calculator
+This program calculates area of triangle.
+
+<CodeBlock
+        language="python"
+        filename="triangleAreaCalculator.py"
+        code={
+                `
+                def calculate_triangle_area(base, height):
+    """Calculates the area of a triangle."""
+    if base <= 0 or height <= 0:
+        return "Base and height must be positive values."
+    area = 0.5 * base * height
+    return area
+
+base = float(input("Enter the base of the triangle: "))
+height = float(input("Enter the height of the triangle: "))
+
+area = calculate_triangle_area(base, height)
+print(f"The area of the triangle is: {area}")
+
+import math
+
+def triangle_area_heron(a, b, c):
+    if a + b <= c or a + c <= b or b + c <= a:
+        return "Invalid triangle sides."
+    s = (a + b + c) / 2
+    area = math.sqrt(s * (s - a) * (s - b) * (s - c))
+    return area
+
+a = float(input("Enter side a: "))
+b = float(input("Enter side b: "))
+c = float(input("Enter side c: "))
+
+area_heron = triangle_area_heron(a, b, c)
+print(f"The area of the triangle (Heron's Formula) is: {area_heron}")`
+        }
+/>
+      
+
+##  Employee Salary Calculator
+Employee Salary calculator calculated the salary of employee by deducting taxes.
+
+
+<CodeBlock
+        language="python"
+        filename="employeeSalaryCalculator.py"
+        code={`
+        def calculate_net_salary(gross_salary, tax_rate, deductions):
+    """Calculates the net salary after tax and deductions."""
+
+    if gross_salary < 0:
+        return "Gross salary cannot be negative."
+
+    tax_amount = gross_salary * (tax_rate / 100)
+    net_salary = gross_salary - tax_amount - deductions
+    return net_salary
+
+gross_salary = float(input("Enter the gross salary: "))
+tax_rate = float(input("Enter the tax rate (%): "))
+deductions = float(input("Enter total deductions: "))
+
+net_salary = calculate_net_salary(gross_salary, tax_rate, deductions)
+print(f"The net salary is: {net_salary}")
+
+# More advanced example with overtime:
+def calculate_salary_with_overtime(hourly_rate, regular_hours, overtime_hours):
+    regular_pay = hourly_rate * regular_hours
+    overtime_pay = hourly_rate * 1.5 * overtime_hours # 1.5 for time and a half
+    total_pay = regular_pay + overtime_pay
+    return total_pay
+
+hourly_rate = float(input("Enter hourly rate: "))
+regular_hours = float(input("Enter regular hours worked: "))
+overtime_hours = float(input("Enter overtime hours worked: "))
+
+total_pay = calculate_salary_with_overtime(hourly_rate, regular_hours, overtime_hours)
+print(f"Total pay with overtime: {total_pay}")
+        `}
+/>
