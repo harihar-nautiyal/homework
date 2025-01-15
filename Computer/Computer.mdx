@@ -24,35 +24,6 @@ Employee Salary calculator calculated the salary of employee by deducting taxes.
         language="python"
         filename="employeeSalaryCalculator.py"
         code={`
-        def calculate_net_salary(gross_salary, tax_rate, deductions):
-    """Calculates the net salary after tax and deductions."""
-
-    if gross_salary < 0:
-        return "Gross salary cannot be negative."
-
-    tax_amount = gross_salary * (tax_rate / 100)
-    net_salary = gross_salary - tax_amount - deductions
-    return net_salary
-
-gross_salary = float(input("Enter the gross salary: "))
-tax_rate = float(input("Enter the tax rate (%): "))
-deductions = float(input("Enter total deductions: "))
-
-net_salary = calculate_net_salary(gross_salary, tax_rate, deductions)
-print(f"The net salary is: {net_salary}")
-
-# More advanced example with overtime:
-def calculate_salary_with_overtime(hourly_rate, regular_hours, overtime_hours):
-    regular_pay = hourly_rate * regular_hours
-    overtime_pay = hourly_rate * 1.5 * overtime_hours # 1.5 for time and a half
-    total_pay = regular_pay + overtime_pay
-    return total_pay
-
-hourly_rate = float(input("Enter hourly rate: "))
-regular_hours = float(input("Enter regular hours worked: "))
-overtime_hours = float(input("Enter overtime hours worked: "))
-
-total_pay = calculate_salary_with_overtime(hourly_rate, regular_hours, overtime_hours)
-print(f"Total pay with overtime: {total_pay}")
+print("Hello world")
         `}
 />
