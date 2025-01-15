@@ -1,0 +1,46 @@
+---
+title: Guessing Game
+author: Harihar Nautiyal
+publishTime: 2025-01-15
+modifyTime: 2025-01-15
+date: 2025-01-15
+tags: ['computer', 'holdiay homework']
+description: vault for homework 2025
+bannerURL: https://indiadidac.org/wp-content/uploads/2019/12/homework.jpg
+---
+
+export const game= `
+def guess_number():
+    import random
+    target = random.randint(1, 100)
+    attempts = 0
+    
+    print("Welcome to the Number Guessing Game!")
+    print("I'm thinking of a number between 1 and 100.")
+    
+    while True:
+        try:
+            guess = int(input("Enter your guess: "))
+            attempts += 1
+            
+            if guess < target:
+                print("Too low! Try again.")
+            elif guess > target:
+                print("Too high! Try again.")
+            else:
+                print(f"Congratulations! You guessed it in {attempts} attempts!")
+                break
+        except ValueError:
+            print("Please enter a valid number.")
+`;
+
+# Guessing Game 
+This program is simple and consist of rendering a random number and matching it with player's number
+
+<CodeBlock
+        language="python"
+        filename="guessingGame.py"
+        code={game}
+/>
+
+# 
