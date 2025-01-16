@@ -10,37 +10,10 @@ bannerURL: https://indiadidac.org/wp-content/uploads/2019/12/homework.jpg
 ---
 
 # Guessing Game 
-This program is simple and consist of rendering a random number and matching it with player's number
+This program is simple and consists of generating a random number and matching it with the player's guess.
 
 <CodeBlock
-        language="python"
-        filename="guessingGame.py"
-        code={
-`
-def guess_number():
-    import random
-    target = random.randint(1, 100)
-    attempts = 0
-    
-    print("Welcome to the Number Guessing Game!")
-    print("I'm thinking of a number between 1 and 100.")
-    
-    while True:
-        try:
-            guess = int(input("Enter your guess: "))
-            attempts += 1
-            
-            if guess < target:
-                print("Too low! Try again.")
-            elif guess > target:
-                print("Too high! Try again.")
-            else:
-                print(f"Congratulations! You guessed it in {attempts} attempts!")
-                break
-        except ValueError:
-            print("Please enter a valid number.")
-`
-        }
+language="python"
+filename="guessingGame.py"
+code={"def guess_number():\n    import random\n    target = random.randint(1, 100)\n    attempts = 0\n    \n    print(\"Welcome to the Number Guessing Game!\")\n    print(\"I'm thinking of a number between 1 and 100.\")\n    \n    while True:\n        try:\n            guess = int(input(\"Enter your guess: \"))\n            attempts += 1\n            \n            if guess < target:\n                print(\"Too low! Try again.\")\n            elif guess > target:\n                print(\"Too high! Try again.\")\n            else:\n                print(f\"Congratulations! You guessed it in {attempts} attempts!\")\n                break\n        except ValueError:\n            print(\"Please enter a valid number.\")"} 
 />
-
-# 
