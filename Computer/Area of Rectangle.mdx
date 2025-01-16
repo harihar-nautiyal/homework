@@ -16,10 +16,5 @@ This program calculates the area of a rectangle.
 <CodeBlock
 language="python"
 filename="rectangleAreaCalculator.py"
-code={`
-length = int(input("Enter the length of the rectangle: "))
-width = int(input("Enter the width of the rectangle: "))
-area =  length * width
-print("The area of the rectangle is: ", area)
-`}
+code={`def calculate_rectangle_area(length, width):\n    if length <= 0 or width <= 0:\n        raise ValueError(\"Length and width must be positive values.\")\n    return length * width\n\ntry:\n    length = float(input(\"Enter the length of the rectangle: \"))\n    width = float(input(\"Enter the width of the rectangle: \"))\n    area = calculate_rectangle_area(length, width)\n    print(f\"The area of the rectangle is: {area}\")\nexcept ValueError as e:\n    print(f\"Error: {e}\")`}
 />
