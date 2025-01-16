@@ -1,9 +1,9 @@
 ---
 title: Average of Numbers Calculator
 author: Harihar Nautiyal
-publishTime: 2025-01-15
-modifyTime: 2025-01-15
-date: 2025-01-15
+publishTime: 2025-01-16
+modifyTime: 2025-01-16
+date: 2025-01-16
 tags: ['program','computer', 'holdiay homework']
 description: vault for homework 2025
 bannerURL: https://indiadidac.org/wp-content/uploads/2019/12/homework.jpg
@@ -17,14 +17,13 @@ This program calculates the average of a list of numbers. Using integers will re
 language="python"
 filename="averageCalculator.py"
 code={`
-def calculate_average(numbers):
-if not numbers:
-return 0
-return sum(numbers) // len(numbers) # Use integer division
-
 num_str = input("Enter numbers separated by spaces: ")
 numbers = [int(x) for x in num_str.split()]
-average = calculate_average(numbers)
+
+average = 0
+if numbers:  # Check if the list is not empty
+    average = sum(numbers) / len(numbers)  # Calculate average directly
+
 print(f"The average of the numbers is: {average}")
 `}
 />
