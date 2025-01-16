@@ -1,0 +1,25 @@
+---
+title: Temperature Converter
+author: Harihar Nautiyal
+publishTime: 2025-01-15
+modifyTime: 2025-01-15
+date: 2025-01-15
+tags: ['program','computer', 'holdiay homework']
+description: vault for homework 2025
+bannerURL: https://indiadidac.org/wp-content/uploads/2019/12/homework.jpg
+---
+
+This program converts temperature from Celsius to Fahrenheit. Using integers will result in integer Fahrenheit values.
+
+<CodeBlock
+language="python"
+filename="temperatureConverter.py"
+code={`
+def celsius_to_fahrenheit(celsius):
+return (celsius * 9 // 5) + 32 # Use integer division
+
+celsius = int(input("Enter temperature in Celsius: "))
+fahrenheit = celsius_to_fahrenheit(celsius)
+print(f"Temperature in Fahrenheit is: {fahrenheit}")
+`}
+/>

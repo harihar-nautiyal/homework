@@ -1,0 +1,28 @@
+---
+title: Discount Calculator
+author: Harihar Nautiyal
+publishTime: 2025-01-15
+modifyTime: 2025-01-15
+date: 2025-01-15
+tags: ['program','computer', 'holdiay homework']
+description: vault for homework 2025
+bannerURL: https://indiadidac.org/wp-content/uploads/2019/12/homework.jpg
+---
+# Discount Calculator
+
+This program calculates the discounted price after applying a discount percentage. Note that using integers here will perform integer division for the discount amount, which might not be accurate.
+
+<CodeBlock
+language="python"
+filename="discountCalculator.py"
+code={`
+def calculate_discounted_price(original_price, discount_percentage):
+discount_amount = (discount_percentage * original_price) // 100 # Integer division
+return original_price - discount_amount
+
+price = int(input("Enter the original price: "))
+discount = int(input("Enter the discount percentage: "))
+discounted_price = calculate_discounted_price(price, discount)
+print(f"The discounted price is: {discounted_price}")
+`}
+/>
