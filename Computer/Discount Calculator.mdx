@@ -17,8 +17,8 @@ language="python"
 filename="discountCalculator.py"
 code={`
 price = int(input("Enter the original price: "))
-discount = int(input("Enter the discount percentage: "))
-discountAmount = price * discount
+discountPercentage = int(input("Enter the discount percentage: "))
+discountAmount = (discountPercentage/100) * price
 deductedAmount = price - discountAmount
 print("The discounted price is: ", deductedAmount)
 `}
