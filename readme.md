@@ -6,7 +6,7 @@ modifyTime: 2025-01-15
 date: 2025-01-15
 tags: ['homework' , '2025' , 'winters', 'vacation']
 description: vault for homework 2025
-bannerURL: https://indiadidac.org/wp-content/uploads/2019/12/homework.jpg
+bannerURL: https://images.unsplash.com/photo-1584847642060-a46e239155a8
 ---
 
 # Homework - 2025 - Winters

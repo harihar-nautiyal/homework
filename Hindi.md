@@ -8,7 +8,7 @@ description: vault for homework 2025
 bannerURL: https://img.freepik.com/free-vector/gradient-geometric-background_23-2148807617.jpg
 author: {
     name: "Harihar Nautiyal",
-    image: 'https://wallpapers-clan.com/wp-content/uploads/2024/01/batman-profile-rain-dark-blue-desktop-wallpaper-preview.jpg'
+    image: 'https://images.unsplash.com/photo-1612916628677-475f676a6adf'
 }
 ---
 
