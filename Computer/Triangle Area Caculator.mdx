@@ -15,20 +15,5 @@ This program calculates area of triangle and handles errors in herons formula.
 <CodeBlock
         language="python"
         filename="triangleAreaCalculator.py"
-        code={
-                `
-def triangle_area(base, height):
-    """Calculates the area of a triangle."""
-    area = 0.5 * base * height
-    return area
-
-# Get input from the user
-base = float(input("Enter the base of the triangle: "))
-height = float(input("Enter the height of the triangle: "))
-
-area = triangle_area(base, height)
-print(f"The area of the triangle is: {area}")
-`
-        }
+        code={`def triangle_area(base, height):\n    \"\"\"Calculates the area of a triangle.\"\"\"\n    area = 0.5 * base * height\n    return area\n\n# Get input from the user\nbase = float(input(\"Enter the base of the triangle: \"))\nheight = float(input(\"Enter the height of the triangle: \"))\n\narea = triangle_area(base, height)\nprint(f\"The area of the triangle is: {area}\")`}
 />
-      
