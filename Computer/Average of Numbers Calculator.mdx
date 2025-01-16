@@ -16,14 +16,5 @@ This program calculates the average of a list of numbers. Using integers will re
 <CodeBlock
 language="python"
 filename="averageCalculator.py"
-code={`
-num_str = input("Enter numbers separated by spaces: ")
-numbers = [int(x) for x in num_str.split()]
-
-average = 0
-if numbers:  # Check if the list is not empty
-    average = sum(numbers) / len(numbers)  # Calculate average directly
-
-print(f"The average of the numbers is: {average}")
-`}
+code={`num_str = input(\"Enter numbers separated by spaces: \")\nnumbers = [int(x) for x in num_str.split()]\n\naverage = 0\nif numbers:  # Check if the list is not empty\n    average = sum(numbers) / len(numbers)  # Calculate average directly\n\nprint(f\"The average of the numbers is: {average}\")`}
 />

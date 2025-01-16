@@ -15,11 +15,5 @@ This program calculates the discounted price after applying a discount percentag
 <CodeBlock
 language="python"
 filename="discountCalculator.py"
-code={`
-price = int(input("Enter the original price: "))
-discountPercentage = int(input("Enter the discount percentage: "))
-discountAmount = (discountPercentage/100) * price
-deductedAmount = price - discountAmount
-print("The discounted price is: ", deductedAmount)
-`}
+code={`try:\n    price = float(input(\"Enter the original price: \"))\n    discountPercentage = float(input(\"Enter the discount percentage: \"))\n    if price < 0 or discountPercentage < 0 or discountPercentage > 100:\n        raise ValueError(\"Price and discount percentage must be non-negative. Discount percentage must not exceed 100%.\")\n    discountAmount = (discountPercentage / 100) * price\n    discountedPrice = price - discountAmount\n    print(f\"The discounted price is: {discountedPrice}\")\nexcept ValueError as e:\n    print(f\"Error: {e}\")`}
 />
