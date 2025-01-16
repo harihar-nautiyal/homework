@@ -16,13 +16,10 @@ This program calculates the discounted price after applying a discount percentag
 language="python"
 filename="discountCalculator.py"
 code={`
-def calculate_discounted_price(original_price, discount_percentage):
-discount_amount = (discount_percentage * original_price) // 100 # Integer division
-return original_price - discount_amount
-
 price = int(input("Enter the original price: "))
 discount = int(input("Enter the discount percentage: "))
-discounted_price = calculate_discounted_price(price, discount)
-print(f"The discounted price is: {discounted_price}")
+discountAmount = (price * discount)
+deductedAmount = original_price - discount_amount
+print("The discounted price is: ", deductedAmount)
 `}
 />
