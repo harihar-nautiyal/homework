@@ -9,7 +9,14 @@ description: vault for homework 2025
 bannerURL: https://indiadidac.org/wp-content/uploads/2019/12/homework.jpg
 ---
 
-export const game= `
+
+# File Word Counter
+This program calculate the number of words in a specific file like .txt file.
+
+<CodeBlock
+        language="python"
+        filename="wordCounter.py"
+        code={`
 def count_words(filename):
     try:
         with open(filename, 'r') as file:
@@ -18,13 +25,5 @@ def count_words(filename):
             return len(words)
     except FileNotFoundError:
         return "File not found."
-`;
-
-# File Word Counter
-This program calculate the number of words in a specific file like .txt file.
-
-<CodeBlock
-        language="python"
-        filename="wordCounter.py"
-        code={game}
+        `}
 />

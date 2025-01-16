@@ -9,7 +9,14 @@ description: vault for homework 2025
 bannerURL: https://indiadidac.org/wp-content/uploads/2019/12/homework.jpg
 ---
 
-export const game= `
+# Guessing Game 
+This program is simple and consist of rendering a random number and matching it with player's number
+
+<CodeBlock
+        language="python"
+        filename="guessingGame.py"
+        code={
+`
 def guess_number():
     import random
     target = random.randint(1, 100)
@@ -32,15 +39,8 @@ def guess_number():
                 break
         except ValueError:
             print("Please enter a valid number.")
-`;
-
-# Guessing Game 
-This program is simple and consist of rendering a random number and matching it with player's number
-
-<CodeBlock
-        language="python"
-        filename="guessingGame.py"
-        code={game}
+`
+        }
 />
 
 # 
